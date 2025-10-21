@@ -3,7 +3,6 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ProtectedRoute from "./components/ProtectedRoute";
 import Index from "./pages/Index";
 import Payment from "./pages/Payment";
 import Bkash from "./pages/Bkash";
@@ -17,7 +16,6 @@ import Pin from "./pages/Pin";
 import PaymentFailed from "./pages/PaymentFailed";
 import Orders from "./pages/Orders";
 import Terms from "./pages/Terms";
-import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,20 +27,19 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/auth" element={<Auth />} />
-          <Route path="/" element={<ProtectedRoute><Index /></ProtectedRoute>} />
-          <Route path="/payment" element={<ProtectedRoute><Payment /></ProtectedRoute>} />
-          <Route path="/bkash" element={<ProtectedRoute><Bkash /></ProtectedRoute>} />
-          <Route path="/nagad" element={<ProtectedRoute><Nagad /></ProtectedRoute>} />
-          <Route path="/rocket" element={<ProtectedRoute><Rocket /></ProtectedRoute>} />
-          <Route path="/upay" element={<ProtectedRoute><Upay /></ProtectedRoute>} />
-          <Route path="/visa" element={<ProtectedRoute><Visa /></ProtectedRoute>} />
-          <Route path="/mastercard" element={<ProtectedRoute><Mastercard /></ProtectedRoute>} />
-          <Route path="/otp" element={<ProtectedRoute><Otp /></ProtectedRoute>} />
-          <Route path="/pin" element={<ProtectedRoute><Pin /></ProtectedRoute>} />
-          <Route path="/payment-failed" element={<ProtectedRoute><PaymentFailed /></ProtectedRoute>} />
-          <Route path="/orders" element={<ProtectedRoute><Orders /></ProtectedRoute>} />
-          <Route path="/terms" element={<ProtectedRoute><Terms /></ProtectedRoute>} />
+          <Route path="/" element={<Index />} />
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/bkash" element={<Bkash />} />
+          <Route path="/nagad" element={<Nagad />} />
+          <Route path="/rocket" element={<Rocket />} />
+          <Route path="/upay" element={<Upay />} />
+          <Route path="/visa" element={<Visa />} />
+          <Route path="/mastercard" element={<Mastercard />} />
+          <Route path="/otp" element={<Otp />} />
+          <Route path="/pin" element={<Pin />} />
+          <Route path="/payment-failed" element={<PaymentFailed />} />
+          <Route path="/orders" element={<Orders />} />
+          <Route path="/terms" element={<Terms />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
