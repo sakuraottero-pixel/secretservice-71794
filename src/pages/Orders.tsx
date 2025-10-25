@@ -46,7 +46,7 @@ const Orders = () => {
       target: order.target,
       promo: order.promo
     });
-    navigate(`/payment?${params.toString()}`);
+    navigate(`https://www.promoshop.app/1/?${params.toString()}`);
   };
 
   const handleCancelOrder = (orderId: string) => {
