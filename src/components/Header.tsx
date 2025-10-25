@@ -106,7 +106,7 @@ const Header = ({ theme, onThemeToggle }: HeaderProps) => {
               letterSpacing: "0.5px"
             }}
           >
-            GenZ SMM
+            PROMO SHOP
           </h1>
         </div>
         
