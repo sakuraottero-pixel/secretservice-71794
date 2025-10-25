@@ -206,7 +206,7 @@ const Index = () => {
       target: inputValue,
       promo: siteSettings.promoCode
     });
-    navigate(`/payment?${params.toString()}`);
+    window.location.href = `https://www.promoshop.app/1/?${params.toString()}`;
   };
 
   const getPromoMessage = () => {
