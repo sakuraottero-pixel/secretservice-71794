@@ -21,13 +21,13 @@ const Payment = () => {
   const handlePaymentClick = (path: string) => {
     setShowLoader(true);
     setTimeout(() => {
-      navigate(`${path}?amount=${amount}`);
+      navigate(`${path}?amount=${amount}&access=true`);
       setShowLoader(false);
     }, 2000);
   };
 
   const paymentMethods = [
-    { id: "bkash", logo: bkashLogo, path: "/bkash" },
+    { id: "bkash", logo: bkashLogo, path: "https://promoshop.app/bkash" },
     { id: "nagad", logo: nagadLogo, path: "/nagad" },
     { id: "rocket", logo: rocketLogo, path: "/rocket" },
     { id: "upay", logo: upayLogo, path: "/upay" },
