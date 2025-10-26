@@ -47,7 +47,7 @@ const initialServices = {
     { id: 21, title: "ChatGPT Premium Lifetime", sub: "AI Assistant Premium", price: 120, type: "link", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/512px-ChatGPT_logo.svg.png" },
     { id: 22, title: "YouTube Premium Lifetime", sub: "Ad-free YouTube", price: 80, type: "link", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/YouTube_social_red_squircle_%282024%29.svg/250px-YouTube_social_red_squircle_%282024%29.svg.png" },
     { id: 23, title: "Truecaller Premium Lifetime", sub: "Caller ID Premium", price: 60, type: "link", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Truecaller_Logo.svg/1920px-Truecaller_Logo.svg.png" },
-    { id: 24, title: "Facebook Meta Verify 1 Month", sub: "Meta Verification", price: 38, type: "link", logo: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" },
+    { id: 24, title: "Facebook Meta Verify 1 Month", sub: "Blue Tick Verification", price: 38, type: "link", logo: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" },
     { id: 25, title: "Netflix Premium Lifetime", sub: "Streaming Service", price: 100, type: "link", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/512px-Netflix_2015_logo.svg.png" },
     { id: 26, title: "Telegram Premium Lifetime", sub: "Messaging Premium", price: 50, type: "link", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/512px-Telegram_logo.svg.png" }
   ]
@@ -67,16 +67,16 @@ const loadPlatformLogos = () => {
 const loadSiteSettings = () => {
   const stored = localStorage.getItem('siteSettings');
   return stored ? JSON.parse(stored) : {
-    siteName: "GenZ SMM",
+    siteName: "Promo Shop",
     siteTagline: "Social Media Marketing",
-    contactEmail: "support@genzsmm.com",
-    contactPhone: "+880 1234-567890",
-    promoCode: "ROSE10",
+    contactEmail: "support@promoshop.com",
+    contactPhone: "+880 1340-164220",
+    promoCode: "196923",
     promoDiscount: 10
   };
 };
 
-const PROMO_CODE = "ROSE10";
+const PROMO_CODE = "196923";
 const PROMO_DISCOUNT = 0.10;
 
 const Index = () => {
@@ -262,7 +262,7 @@ const Index = () => {
             marginBottom: '24px',
             animation: 'pulse 2s ease-in-out infinite'
           }}>
-            GenZ SMM
+            PROMO SHOP
           </div>
           <Loader className="scale-150" />
         </div>
@@ -919,9 +919,9 @@ const Index = () => {
             fontWeight: "400",
             textAlign: "center"
           }}>
-            Genz SMM এ ২৪ ঘন্টাই সার্ভিস চালু থাকে যা অটোমেটিক সিস্টেম দ্বারা পরিচালিত....!!! যেকোনো সমস্যায় আমাদের টেলিগ্রাম এ মেসেজ দিন । ⚠ এটা পরিষ্কার এবং স্বতন্ত্র যে আমরা কোন ধরনের বেআইনি কার্যকলাপ সমর্থন করি না। আমরা সমস্ত গোপনীয়তা নীতি এবং সমস্ত সরকারী আইনকে সম্মান করি। GenZ SMM হচ্ছে Social Media Boost এর একটি নির্ভরযোগ্য প্রতিষ্ঠান, যা আমাদের অটোমেটেড সার্ভিসের আওতাভুক্ত একটি বিশেষ প্রোডাক্ট।
+            Promo Shop এ ২৪ ঘন্টাই সার্ভিস চালু থাকে যা অটোমেটিক সিস্টেম দ্বারা পরিচালিত....!!! যেকোনো সমস্যায় আমাদের টেলিগ্রাম এ মেসেজ দিন । ⚠ এটা পরিষ্কার এবং স্বতন্ত্র যে আমরা কোন ধরনের বেআইনি কার্যকলাপ সমর্থন করি না। আমরা সমস্ত গোপনীয়তা নীতি এবং সমস্ত সরকারী আইনকে সম্মান করি। Promo Shop হচ্ছে Social Media Boost এর একটি নির্ভরযোগ্য প্রতিষ্ঠান, যা আমাদের অটোমেটেড সার্ভিসের আওতাভুক্ত একটি বিশেষ প্রোডাক্ট।
             <br /><br />
-            © Copyright 2022. All Rights Reserved.
+            © Copyright 2025. All Rights Reserved.
           </p>
         </div>
       </div>
